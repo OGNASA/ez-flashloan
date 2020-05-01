@@ -2,9 +2,15 @@
   "dependencies": {
     "@openzeppelin/contracts": "^2.5.0",
     "@truffle/hdwallet-provider": "^1.0.33",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "truffle": "^5.1.14"
-  }
+  },
+  "scripts": {
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "snyk": true
 }
